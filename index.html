@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
@@ -18,7 +18,7 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- AOS â€“ Animate On Scroll -->
+  <!-- AOS - Animate On Scroll -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
@@ -72,7 +72,7 @@
   </script>
 
   <style>
-    /* â”€â”€ Reset & Base â”€â”€ */
+    /* ---- Reset & Base ---- */
     *, *::before, *::after { box-sizing: border-box; margin: 0; }
     html { scroll-behavior: smooth; }
     body {
@@ -83,7 +83,7 @@
     }
     h1, h2, h3, h4, h5, h6 { font-family: 'Space Grotesk', sans-serif; }
 
-    /* â”€â”€ Gradient text â”€â”€ */
+    /* ---- Gradient text ---- */
     .text-gradient-amber {
       background: linear-gradient(135deg, #f59e0b, #fb923c);
       -webkit-background-clip: text;
@@ -97,10 +97,10 @@
       background-clip: text;
     }
 
-    /* â”€â”€ Gradient backgrounds â”€â”€ */
+    /* ---- Gradient backgrounds ---- */
     .bg-gradient-amber { background: linear-gradient(135deg, #f59e0b, #d97706); }
 
-    /* â”€â”€ Hero â”€â”€ */
+    /* ---- Hero ---- */
     .hero-bg {
       background:
         radial-gradient(ellipse 80% 60% at 50% -10%, rgba(245,158,11,0.08) 0%, transparent 70%),
@@ -115,7 +115,7 @@
       background-size: 60px 60px;
     }
 
-    /* â”€â”€ Glassmorphism â”€â”€ */
+    /* ---- Glassmorphism ---- */
     .glass {
       background: rgba(10, 25, 47, 0.8);
       backdrop-filter: blur(20px);
@@ -135,11 +135,11 @@
       border: 1px solid rgba(245,158,11,0.15);
     }
 
-    /* â”€â”€ Section backgrounds â”€â”€ */
+    /* ---- Section backgrounds ---- */
     .bg-section-alt  { background: linear-gradient(135deg, #0d1f38 0%, #0a192f 100%); }
     .bg-section-dark { background: linear-gradient(135deg, #050d1a 0%, #071526 100%); }
 
-    /* â”€â”€ Expertise cards â”€â”€ */
+    /* ---- Expertise cards ---- */
     .expertise-card {
       background: linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
       border: 1px solid rgba(255,255,255,0.07);
@@ -151,7 +151,7 @@
       border-color: rgba(245,158,11,0.25);
     }
 
-    /* â”€â”€ Buttons â”€â”€ */
+    /* ---- Buttons ---- */
     .btn-primary {
       background: linear-gradient(135deg, #f59e0b, #d97706);
       color: #0a192f;
@@ -175,7 +175,7 @@
     }
     .btn-enquiry-pulse { animation: pulse-glow 2s ease-in-out infinite; }
 
-    /* â”€â”€ Industry tags â”€â”€ */
+    /* ---- Industry tags ---- */
     .industry-tag {
       border: 1.5px solid rgba(255,255,255,0.1);
       transition: border-color 0.25s, color 0.25s, background 0.25s;
@@ -186,7 +186,7 @@
       background: rgba(245,158,11,0.06);
     }
 
-    /* â”€â”€ Marquee â”€â”€ */
+    /* ---- Marquee ---- */
     @keyframes marquee {
       from { transform: translateX(0); }
       to   { transform: translateX(-50%); }
@@ -200,7 +200,7 @@
     }
     .marquee-wrapper:hover .marquee-track { animation-play-state: paused; }
 
-    /* â”€â”€ Modal â”€â”€ */
+    /* ---- Modal ---- */
     .modal-overlay-bg {
       background: rgba(5, 13, 26, 0.88);
       backdrop-filter: blur(8px);
@@ -212,7 +212,7 @@
     }
     .modal-animate { animation: modal-in 0.35s cubic-bezier(0.16,1,0.3,1) forwards; }
 
-    /* â”€â”€ Floating labels â”€â”€ */
+    /* ---- Floating labels ---- */
     .floating-group { position: relative; }
     .floating-input {
       background: rgba(255,255,255,0.04);
@@ -255,36 +255,33 @@
       color: #f59e0b;
     }
 
-    /* â”€â”€ Toast â”€â”€ */
+    /* ---- Toast ---- */
     @keyframes toast-slide {
       from { opacity: 0; transform: translateY(16px) scale(0.95); }
       to   { opacity: 1; transform: translateY(0) scale(1); }
     }
     .toast-animate { animation: toast-slide 0.4s cubic-bezier(0.16,1,0.3,1) forwards; }
 
-    /* â”€â”€ Why VBS check items â”€â”€ */
+    /* ---- Why VBS check items ---- */
     .check-item { transition: transform 0.2s ease; }
     .check-item:hover { transform: translateX(6px); }
 
-    /* â”€â”€ Spinner â”€â”€ */
+    /* ---- Spinner ---- */
     @keyframes spin { to { transform: rotate(360deg); } }
     .spinner { animation: spin 0.8s linear infinite; }
 
-    /* â”€â”€ Scrollbar â”€â”€ */
+    /* ---- Scrollbar ---- */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: #050d1a; }
     ::-webkit-scrollbar-thumb { background: rgba(245,158,11,0.3); border-radius: 3px; }
 
-    /* â”€â”€ About accent line â”€â”€ */
+    /* ---- About accent line ---- */
     .about-accent { background: linear-gradient(90deg, #f59e0b, transparent); }
   </style>
 </head>
 
 <body>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     NAVBAR
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 glass transition-all duration-300">
   <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
     <!-- Logo -->
@@ -307,11 +304,8 @@
       <a href="#contact"   class="text-sm text-slate-400 hover:text-slate-100 transition-colors font-body tracking-wide">Contact</a>
     </div>
 
-    <!-- Enquiry CTA + mobile toggle -->
+    <!-- Mobile toggle -->
     <div class="flex items-center gap-4">
-      <button onclick="openModal()" class="hidden md:flex btn-primary px-5 py-2.5 rounded-lg text-sm font-bold tracking-wide cursor-pointer">
-        Make an Enquiry
-      </button>
       <button id="menu-btn" class="md:hidden text-slate-300 p-1" onclick="toggleMenu()" aria-label="Toggle menu">
         <svg id="menu-icon-open"  class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
         <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
@@ -326,16 +320,10 @@
     <a href="#approach"  onclick="toggleMenu()" class="block text-sm text-slate-400 hover:text-slate-100 font-body py-1">Approach</a>
     <a href="#why-vbs"   onclick="toggleMenu()" class="block text-sm text-slate-400 hover:text-slate-100 font-body py-1">Why VBS</a>
     <a href="#contact"   onclick="toggleMenu()" class="block text-sm text-slate-400 hover:text-slate-100 font-body py-1">Contact</a>
-    <button onclick="openModal(); toggleMenu();" class="w-full btn-primary px-5 py-3 rounded-lg text-sm font-bold tracking-wide cursor-pointer mt-2">
-      Make an Enquiry
-    </button>
   </div>
 </nav>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     HERO SECTION
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="relative min-h-screen flex items-center overflow-hidden hero-bg">
   <!-- Subtle grid overlay -->
   <div class="absolute inset-0 hero-grid opacity-50 pointer-events-none"></div>
@@ -348,41 +336,36 @@
   <div class="relative z-10 max-w-7xl mx-auto px-6 py-32 pt-36 w-full">
     <div class="max-w-3xl">
 
-      <!-- Eyebrow -->
-      <div class="flex items-center gap-3 mb-7 opacity-0" style="animation:fade-up 0.6s 0.1s ease-out forwards;">
+            <!-- Eyebrow -->
+      <div class="flex items-center gap-3 mb-6" style="opacity:0;animation:fade-up 0.6s 0.1s ease-out forwards;">
         <div class="h-px w-12 bg-amber-500"></div>
-        <span class="text-amber-500 font-medium tracking-widest uppercase text-xs font-body">Engineering Consultancy Â· Tamil Nadu, India</span>
+        <span class="text-amber-500 font-medium tracking-widest uppercase text-xs font-body">Engineering Consultancy</span>
       </div>
 
-      <!-- Main headline -->
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading leading-tight mb-7 opacity-0" style="animation:fade-up 0.8s 0.25s ease-out forwards;">
-        <span class="text-slate-100">Engineering Precision.</span><br/>
-        <span class="text-gradient-amber">Automotive Compliance.</span><br/>
-        <span class="text-slate-200">Manufacturing Excellence.</span>
+            <!-- Main headline -->
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading leading-tight mb-5" style="opacity:0;animation:fade-up 0.8s 0.25s ease-out forwards;">
+        <span class="text-slate-100">VBS Process</span><br/>
+        <span class="text-gradient-amber">Excellence</span>
       </h1>
 
-      <!-- Subheadline -->
-      <p class="text-base md:text-lg text-slate-400 max-w-xl mb-8 font-body leading-relaxed opacity-0" style="animation:fade-up 0.6s 0.42s ease-out forwards;">
-        Specializing in PDC Process Excellence, Automotive Quality Systems, and Manufacturing Performance Improvement.
+            <!-- Standards subtitle -->
+      <p class="text-sm md:text-base text-slate-300 font-body font-medium mb-5" style="opacity:0;animation:fade-up 0.6s 0.38s ease-out forwards;">
+        PDC Process Excellence &nbsp;&middot;&nbsp; IATF 16949 &nbsp;&middot;&nbsp; VDA 6.3 &nbsp;&middot;&nbsp; ISO 9001 QMS &nbsp;&middot;&nbsp; Manufacturing Improvement
       </p>
 
-      <!-- Standards tags -->
-      <div class="flex flex-wrap gap-2 mb-10 opacity-0" style="animation:fade-up 0.6s 0.52s ease-out forwards;">
-        <span class="text-xs px-3 py-1.5 rounded-full border border-amber-500/25 text-amber-400/90 font-body">âš™ï¸ PDC Process Excellence</span>
-        <span class="text-xs px-3 py-1.5 rounded-full border border-cyan-500/25 text-cyan-400/80 font-body">ðŸ“‹ IATF 16949</span>
-        <span class="text-xs px-3 py-1.5 rounded-full border border-white/10 text-slate-400 font-body">VDA 6.3</span>
-        <span class="text-xs px-3 py-1.5 rounded-full border border-white/10 text-slate-400 font-body">ISO 9001:2015</span>
-      </div>
+      <!-- Description -->
+      <p class="text-base text-slate-400 max-w-xl mb-10 font-body leading-relaxed" style="opacity:0;animation:fade-up 0.6s 0.5s ease-out forwards;">
+        Specialized engineering consultancy supporting automotive and manufacturing operations with stable processes, defect reduction, and global standards alignment.
+      </p>
 
       <!-- CTA buttons -->
-      <div class="flex flex-wrap gap-4 opacity-0" style="animation:fade-up 0.6s 0.62s ease-out forwards;">
-        <button onclick="openModal()" class="btn-primary btn-enquiry-pulse px-8 py-4 rounded-xl text-sm font-bold tracking-wider cursor-pointer inline-flex items-center gap-2">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
-          Make an Enquiry
-        </button>
-        <a href="#expertise" class="btn-outline inline-flex items-center gap-2 px-8 py-4 rounded-xl text-sm font-bold tracking-wider">
-          Explore Services
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+      <div class="flex flex-wrap gap-4" style="opacity:0;animation:fade-up 0.6s 0.62s ease-out forwards;">
+        <a href="#expertise" class="btn-primary px-8 py-4 rounded-xl text-sm font-bold tracking-wider inline-flex items-center gap-2">
+          Our Expertise
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+        </a>
+        <a href="#contact" class="btn-outline inline-flex items-center gap-2 px-8 py-4 rounded-xl text-sm font-bold tracking-wider">
+          Get In Touch
         </a>
       </div>
     </div>
@@ -399,10 +382,6 @@
   </div>
 </section>
 
-
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     ABOUT SECTION
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="about" class="py-24 bg-section-alt">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid md:grid-cols-2 gap-16 items-center">
@@ -454,10 +433,10 @@
           Sheet Metal Design Support is provided as an additional engineering service, combining
           DFM expertise with precision fabrication feasibility for versatile manufacturing solutions.
         </p>
-        <button onclick="openModal()" class="btn-outline mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold cursor-pointer">
+        <a href="#contact" class="btn-outline mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold">
           Start a Conversation
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-        </button>
+        </a>
       </div>
 
     </div>
@@ -465,9 +444,6 @@
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     EXPERTISE SECTION
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="expertise" class="py-24 bg-section-dark">
   <div class="max-w-7xl mx-auto px-6">
 
@@ -482,10 +458,9 @@
       <p class="text-slate-500 mt-4 max-w-xl mx-auto text-sm font-body">Comprehensive engineering consultancy services built for precision, quality, and measurable performance.</p>
     </div>
 
-    <!-- 2Ã—2 Bento grid -->
     <div class="grid md:grid-cols-2 gap-6">
 
-      <!-- Card 1 â€“ PDC Process Excellence -->
+      <!-- Card 1 - PDC Process Excellence -->
       <div class="expertise-card rounded-2xl p-8 cursor-default" data-aos="fade-up" data-aos-delay="0">
         <div class="flex items-start gap-4 mb-6">
           <div class="bg-gradient-amber p-3 rounded-xl flex-shrink-0" style="box-shadow:0 0 20px rgba(245,158,11,0.3);">
@@ -494,7 +469,7 @@
             </svg>
           </div>
           <div>
-            <h3 class="text-xl font-bold font-heading text-slate-100">âš™ï¸ PDC Process Excellence</h3>
+            <h3 class="text-xl font-bold font-heading text-slate-100">⚙️ PDC Process Excellence</h3>
             <span class="text-xs text-amber-500 font-semibold uppercase tracking-wider">Primary Focus</span>
           </div>
         </div>
@@ -508,7 +483,7 @@
         </ul>
       </div>
 
-      <!-- Card 2 â€“ Automotive Quality Systems -->
+      <!-- Card 2 - Automotive Quality Systems -->
       <div class="expertise-card rounded-2xl p-8 cursor-default" data-aos="fade-up" data-aos-delay="100">
         <div class="flex items-start gap-4 mb-6">
           <div class="p-3 rounded-xl flex-shrink-0" style="background:linear-gradient(135deg,#06b6d4,#0284c7);box-shadow:0 0 20px rgba(6,182,212,0.25);">
@@ -517,7 +492,7 @@
             </svg>
           </div>
           <div>
-            <h3 class="text-xl font-bold font-heading text-slate-100">ðŸ“‹ Automotive Quality Systems</h3>
+            <h3 class="text-xl font-bold font-heading text-slate-100">📋 Automotive Quality Systems</h3>
             <span class="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Standards &amp; Audits</span>
           </div>
         </div>
@@ -530,7 +505,7 @@
         </ul>
       </div>
 
-      <!-- Card 3 â€“ Manufacturing Improvement -->
+      <!-- Card 3 - Manufacturing Improvement -->
       <div class="expertise-card rounded-2xl p-8 cursor-default" data-aos="fade-up" data-aos-delay="200">
         <div class="flex items-start gap-4 mb-6">
           <div class="p-3 rounded-xl flex-shrink-0" style="background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 0 20px rgba(16,185,129,0.2);">
@@ -539,7 +514,7 @@
             </svg>
           </div>
           <div>
-            <h3 class="text-xl font-bold font-heading text-slate-100">ðŸ­ Manufacturing Improvement</h3>
+            <h3 class="text-xl font-bold font-heading text-slate-100">🏭 Manufacturing Improvement</h3>
             <span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Operations &amp; Efficiency</span>
           </div>
         </div>
@@ -551,7 +526,7 @@
         </ul>
       </div>
 
-      <!-- Card 4 â€“ Sheet Metal Design -->
+      <!-- Card 4 - Sheet Metal Design -->
       <div class="expertise-card rounded-2xl p-8 cursor-default" data-aos="fade-up" data-aos-delay="300">
         <div class="flex items-start gap-4 mb-6">
           <div class="p-3 rounded-xl flex-shrink-0" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed);box-shadow:0 0 20px rgba(139,92,246,0.2);">
@@ -560,7 +535,7 @@
             </svg>
           </div>
           <div>
-            <h3 class="text-xl font-bold font-heading text-slate-100">ðŸ§© Sheet Metal Design Support</h3>
+            <h3 class="text-xl font-bold font-heading text-slate-100">🧩 Sheet Metal Design Support</h3>
             <span class="text-xs text-violet-400 font-semibold uppercase tracking-wider">Secondary Service</span>
           </div>
         </div>
@@ -577,9 +552,6 @@
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     INDUSTRIES MARQUEE
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="py-12 bg-section-alt overflow-hidden border-y border-white/5">
   <div class="max-w-7xl mx-auto px-6 mb-8" data-aos="fade-up">
     <div class="flex items-center gap-3">
@@ -590,25 +562,21 @@
   <!-- Marquee -->
   <div class="relative overflow-hidden marquee-wrapper" style="mask-image:linear-gradient(90deg,transparent,black 10%,black 90%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,black 10%,black 90%,transparent);">
     <div class="marquee-track">
-      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">ðŸš— Automotive Die Casting</span>
-      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">âš™ï¸ Engineering Components</span>
-      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">ðŸ­ Industrial Manufacturing</span>
-      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">ðŸ”Œ Electrical Enclosures</span>
-      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">ðŸ”§ General Engineering</span>
+      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">🚗 Automotive Die Casting</span>
+      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">⚙️ Engineering Components</span>
+      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">🏭 Industrial Manufacturing</span>
+      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">🔌 Electrical Enclosures</span>
+      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">🔧 General Engineering</span>
       <!-- Duplicated for seamless loop -->
-      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">ðŸš— Automotive Die Casting</span>
-      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">âš™ï¸ Engineering Components</span>
-      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">ðŸ­ Industrial Manufacturing</span>
-      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">ðŸ”Œ Electrical Enclosures</span>
-      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">ðŸ”§ General Engineering</span>
+      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">🚗 Automotive Die Casting</span>
+      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">⚙️ Engineering Components</span>
+      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">🏭 Industrial Manufacturing</span>
+      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">🔌 Electrical Enclosures</span>
+      <span class="industry-tag inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm text-slate-300 font-body flex-shrink-0">🔧 General Engineering</span>
     </div>
   </div>
 </section>
 
-
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     APPROACH SECTION (Horizontal Timeline)
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="approach" class="py-24 bg-section-dark">
   <div class="max-w-7xl mx-auto px-6">
 
@@ -683,18 +651,14 @@
 
     <!-- CTA under approach -->
     <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="100">
-      <button onclick="openModal()" class="btn-primary px-10 py-4 rounded-xl text-sm font-bold tracking-wider cursor-pointer inline-flex items-center gap-2">
+      <a href="#contact" class="btn-primary px-10 py-4 rounded-xl text-sm font-bold tracking-wider inline-flex items-center gap-2">
         Start Your Journey
         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-      </button>
+      </a>
     </div>
   </div>
 </section>
 
-
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     WHY VBS â€” Dark Section
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="why-vbs" class="py-24" style="background:linear-gradient(135deg,#050d1a 0%,#071526 60%,#0a192f 100%);">
   <div class="max-w-7xl mx-auto px-6">
 
@@ -719,7 +683,7 @@
           </div>
           <div>
             <h4 class="font-bold text-slate-200 font-heading">Specialized PDC Focus</h4>
-            <p class="text-slate-400 text-sm mt-1 font-body">Deep expertise in Pressure Die Casting process excellence â€” not a generic consultancy.</p>
+            <p class="text-slate-400 text-sm mt-1 font-body">Deep expertise in Pressure Die Casting process excellence &mdash; not a generic consultancy.</p>
           </div>
         </div>
 
@@ -739,7 +703,7 @@
           </div>
           <div>
             <h4 class="font-bold text-slate-200 font-heading">Shop-Floor Driven Approach</h4>
-            <p class="text-slate-400 text-sm mt-1 font-body">We work directly on the floor â€” hands-on, practical methodology that creates real, lasting change.</p>
+            <p class="text-slate-400 text-sm mt-1 font-body">We work directly on the floor &mdash; hands-on, practical methodology that creates real, lasting change.</p>
           </div>
         </div>
 
@@ -749,7 +713,7 @@
           </div>
           <div>
             <h4 class="font-bold text-slate-200 font-heading">Startup Agility &amp; Results</h4>
-            <p class="text-slate-400 text-sm mt-1 font-body">Lean startup agility with senior expertise â€” faster decisions, result-oriented execution, no red tape.</p>
+            <p class="text-slate-400 text-sm mt-1 font-body">Lean startup agility with senior expertise &mdash; faster decisions, result-oriented execution, no red tape.</p>
           </div>
         </div>
 
@@ -759,9 +723,9 @@
       <div data-aos="fade-left" data-aos-delay="100">
         <div class="glass-card rounded-2xl p-10 text-center relative overflow-hidden">
           <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse at center,rgba(245,158,11,0.06) 0%,transparent 70%);"></div>
-          <div class="text-6xl mb-5 leading-none">âš™ï¸</div>
+          <div class="text-6xl mb-5 leading-none">⚙️</div>
           <h3 class="text-2xl font-extrabold font-heading text-gradient-amber mb-3">PDC Process<br/>Excellence</h3>
-          <p class="text-slate-400 text-sm font-body mb-8 leading-relaxed">Our primary focus â€” helping manufacturers achieve stable, high-quality pressure die casting processes aligned with global automotive standards.</p>
+          <p class="text-slate-400 text-sm font-body mb-8 leading-relaxed">Our primary focus &mdash; helping manufacturers achieve stable, high-quality pressure die casting processes aligned with global automotive standards.</p>
 
           <!-- Standards badges -->
           <div class="flex flex-wrap justify-center gap-2 mb-8">
@@ -789,9 +753,6 @@
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     CONTACT SECTION
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="contact" class="py-24 bg-section-alt">
   <div class="max-w-7xl mx-auto px-6">
 
@@ -836,19 +797,16 @@
 
     <!-- Main CTA -->
     <div class="text-center" data-aos="fade-up">
-      <button onclick="openModal()" class="btn-primary btn-enquiry-pulse px-12 py-4 rounded-xl text-sm font-extrabold tracking-wider cursor-pointer inline-flex items-center gap-3">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
-        Make an Enquiry
-      </button>
+      <a href="#contact" class="btn-primary btn-enquiry-pulse px-12 py-4 rounded-xl text-sm font-extrabold tracking-wider inline-flex items-center gap-3">
+        Get In Touch
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+      </a>
     </div>
 
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     FOOTER
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <footer class="py-10 border-t border-white/5" style="background:#050d1a;">
   <div class="max-w-7xl mx-auto px-6">
     <div class="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -871,13 +829,8 @@
 
 
 
-
-
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     JAVASCRIPT
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <script>
-  // â”€â”€ AOS Init â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ---- AOS Init ----------------------------------------------------------------------------------------------------
   AOS.init({
     duration: 700,
     easing: 'ease-out-cubic',
@@ -885,7 +838,7 @@
     offset: 60,
   });
 
-  // â”€â”€ Navbar scroll effect â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ---- Navbar scroll effect ----------------------------------------------------------------------------
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 80) {
@@ -899,7 +852,7 @@
     }
   });
 
-  // â”€â”€ Mobile menu â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ---- Mobile menu ----------------------------------------------------------------------------------------------
   let menuOpen = false;
   function toggleMenu() {
     menuOpen = !menuOpen;
@@ -910,7 +863,7 @@
 
 
 
-  // â”€â”€ Smooth scroll â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ---- Smooth scroll ------------------------------------------------------------------------------------------
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function(e) {
       const target = document.querySelector(this.getAttribute('href'));
